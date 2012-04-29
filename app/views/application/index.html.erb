@@ -1,0 +1,38 @@
+<% content_for :title do %>Эксклюзив<% end %>
+
+<% content_for :body_attrs do %> class="l-index-page"<% end %>
+
+<% content_for :content do %>
+    <div class="l-content l-content-index">
+        <div class="l-wrapper">
+            <div class="b-gray-with-gradient">
+                <%= @index_promo %>
+            </div>
+            <div class="b-triangular-with-gradient">
+                <ul class="b-main-menu b-main-menu-index">
+                    <% @menu.each do |menu_item| %>
+                        <li class="item"><%= link_to menu_item.title, "/#{menu_item.slug}/" %>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+        <div class="l-main-column-422">
+            <div class="h-left-86">
+                <h3>Наши специалисты</h3>
+                <ul class="b-list-img-with-text">
+                    <% @persons.each do |person| %>
+                        <li class="item">
+                            <%= link_to(image_tag(person.avatar.url(:thumb), :class => 'link'), "/team/##{person.id}", :class => 'image') %>
+                            <span class="text"><%= person.repr %></span>
+                        </li>
+                    <% end %>
+                </ul>
+                <ul class="b-horizontal-list">
+                    <li class="item"><a href="/about/">О команде</a></li>
+                    <li class="item"><a href="/team/#reviews">Отзывы</a></li>
+                    <li class="item"><a href="/contacts/">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<% end %>

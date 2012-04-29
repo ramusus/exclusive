@@ -1,0 +1,85 @@
+<% content_for :title do %>Наша комманда<% end %>
+
+<% content_for :content do %>
+    <script type="text/javascript">
+        $(function() {
+            $('ul.b-list-with-image').each(function() {
+                $('ul', this).not('.b-list-mini-image').addClass('b-list-marker-point');
+                $('li', this).addClass('item');
+            });
+        });
+    </script>
+<% end %>
+
+<% content_for :content do %>
+    <div class="l-content">
+        <div class="l-wrapper-column">
+            <div class="l-column-main">
+                <h1>Наша команда</h1>
+                <%= @team_header %>
+                <div class="b-tabs">
+                    <div class="wrapper-menu">
+                        <ul class="menu-tabs">
+                            <li class="item item-selected">
+                                <a href="/" class="link">Сотрудники</a>
+                            </li>
+                            <li class="item">
+                                <a href="/" class="link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="content-tabs">
+                        <li class="tab tab-selected">
+                            <ul class="b-list-with-image">
+                                <% @persons.each do |person| %>
+                                    <li class="item">
+                                        <%= image_tag(person.avatar.url(:thumb), :class => 'image-main') %>
+                                        <h3 class="title" id="<%= person.id %>"><%= person.name %>,<br><%= person.occupation %></h3>
+                                        <%= person.description.html_safe %>
+                                        <ul class="b-list-mini-image">
+                                            <% person.reviews.each do |review| %>
+                                                <li class="item">
+                                                    <%= link_to(image_tag(review.image.url(:thumb), :class => 'image', :alt => review.name), review.image.url, :class => 'link modal', :rel => 'gallery-1') %>
+                                                </li>
+                                            <% end %>
+                                        </ul>
+                                    </li>
+                                <% end %>
+                            </ul>
+                        </li>
+                        <li class="tab">
+                            <% @reviews.each_slice(6) do |slice| %>
+                                <ul class="b-list-big-image">
+                                    <% slice.each do |review| -%>
+                                        <%= link_to(image_tag(review.image.url(:big_thumb), :alt => review.name), review.image.url, :class => 'link modal', :rel => 'gallery-2') %>
+                                    <% end -%>
+                                </ul>
+                            <% end %>
+                        </li>
+                    </ul>
+                </div>
+                <%= @team_footer %>
+            </div>
+            <div class="l-column-right">
+                <div class="b-vertical-line">
+                    <div class="b-small-text-bottom25">
+                        Мы предоставляем:
+                    </div>
+                    <ul class="b-main-menu">
+                        <% @menu.each do |menu_item| %>
+                            <% if menu_item != @page %>
+                                <li class="item"><%= link_to menu_item.title, "/#{menu_item.slug}/" %>
+                            <% end %>
+                        <% end %>
+                    </ul>
+                </div>
+                <div class="b-gray-bg">
+                    <div class="b-all-contects">
+                        <h3 class="title">Контакты</h3>
+                        <%= @right_contacts %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>

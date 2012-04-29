@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title><%= yield :title %></title>
+    <link media="screen" href="http://new-univer.tversu.ru/css/main.css" type="text/css" rel="stylesheet">
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://new-univer.tversu.ru/css/ie6-7.css"/>
+    <![endif]-->
+    <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+    <script src="http://new-univer.tversu.ru/js/social-networks.js" type="text/javascript"></script>
+    <script src="http://new-univer.tversu.ru/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="http://new-univer.tversu.ru/js/main.js" type="text/javascript"></script>
+    <script src="http://new-univer.tversu.ru/js/modal.js" type="text/javascript"></script>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= yield :extrahead %>
+</head>
+</head>
+<body<%= yield :body_attrs %>>
+    <div class="l-header">
+        <ul class="b-contacts">
+            <li class="item item-no-padding"><div class="b-decorative-bg"><span class="text">Тверь</span></div></li>
+            <li class="item"><%= @header_phone %></li>
+            <li class="item"><a href="/contacts/">Контакты</a></li>
+        </ul>
+        <h1 class="b-logo"><a href="/" class="link">Эксклюзив</a></h1>
+        <div class="b-social-network">
+            <%= @social_buttons %>
+        </div>
+    </div>
+
+    <%= content_for?(:content) ? yield(:content) : yield %>
+
+    <div class="l-footer">
+        <div class="b-developer">Создание и продвижение сайта – <br /><a href="http://infolio.ru/" class="link">Студия infolio / 2</a></div>
+    </div>
+</body>
+</html>

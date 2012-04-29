@@ -1,0 +1,56 @@
+<% content_for :title do %><%= @page.title.html_safe %><% end %>
+
+<% content_for :content do %>
+    <div class="l-content l-content-wide">
+        <div class="b-blue-bg">
+            <div class="l-wrapper-column">
+                <div class="l-column-main">
+                    <h1><%= @page.title.html_safe %></h1>
+                    <%= @page.content.html_safe %>
+                </div>
+                <div class="l-column-right">
+                    <div class="b-vertical-line">
+                        <div class="b-small-text-bottom25">
+                            Также
+                            <br />
+                            мы предоставляем:
+                        </div>
+                        <ul class="b-main-menu">
+                            <% @menu.each do |menu_item| %>
+                                <% if menu_item != @page %>
+                                    <li class="item"><%= link_to menu_item.title, "/#{menu_item.slug}/" %>
+                                <% end %>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="b-gray-bg">
+                        <h4>Узнайте больше
+                        <br />
+                        о нашей компании</h4>
+                        <div class="b-image-with-text">
+                            <%= link_to(image_tag(@page.person.avatar.url(:thumb), :class => 'link'), "/team/##{@page.person.id}", :class => 'image') %>
+                            <span class="text"><%= @page.person.repr %></span>
+                        </div>
+                        <ul class="b-list-without-decorations">
+                            <li class="item">
+                                <a href="/team/">О команде</a>
+                            </li>
+                            <li class="item">
+                                <a href="/team/#reviews">Отзывы</a>
+                            </li>
+                            <li class="item">
+                                <a href="/contacts/">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <% if @page.important.strip.length > 0 %>
+                        <div class="b-red-text">
+                            <strong>Это важно:</strong>
+                        </div>
+                        <%= @page.important.html_safe %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>
