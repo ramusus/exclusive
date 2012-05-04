@@ -4,7 +4,7 @@ require 'bundler/capistrano'
 require 'capistrano/deepmodules'
 
 set :application, "exclusive"
-set :deploy_to, "/var/www/#{application}"
+set :deploy_to, "/data/www/exclusive-tver.ru"
 set :deploy_via, :remote_cache
 set :use_sudo, true
 set :user, "ram"
@@ -16,9 +16,9 @@ set :scm, "git"
 set :repository,  "git@ram.unfuddle.com:ram/exclusive.git"
 set :branch, "master"
 
-role :web, "exclusive.movister.ru"                          # Your HTTP server, Apache/etc
-role :app, "exclusive.movister.ru"                          # This may be the same as your `Web` server
-role :db,  "exclusive.movister.ru", :primary => true # This is where Rails migrations will run
+role :web, "lectures.dev.infolio.ru"                          # Your HTTP server, Apache/etc
+role :app, "lectures.dev.infolio.ru"                          # This may be the same as your `Web` server
+role :db,  "lectures.dev.infolio.ru", :primary => true # This is where Rails migrations will run
 
 default_run_options[:pty] = true
 

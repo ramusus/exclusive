@@ -1,0 +1,30 @@
+ru:
+  time:
+    formats:
+      default: "%e %B"
+  activerecord:
+    models:
+      page: "Страница"
+      person: "Сотрудник"
+      chunk: "Блок"
+      review: "Отзыв"
+    attributes:
+      page:
+        title: "Заголовок"
+        slug: "Адрес"
+        content: "Основной блок"
+        important: "Самое важное"
+        menu: "Показывать в меню"
+        person: "Сотрудник"
+      chunk:
+        title: "Название"
+        code: "Код"
+        content: "Содержимое"
+      person:
+        name: "Имя"
+        occupation: "Должность"
+        description: "Описание"
+        avatar: "Картинка"
+      review:
+        image: "Картинка"
+        person: "Сотрудник"

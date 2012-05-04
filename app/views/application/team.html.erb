@@ -7,6 +7,9 @@
                 $('ul', this).not('.b-list-mini-image').addClass('b-list-marker-point');
                 $('li', this).addClass('item');
             });
+            if(document.location.href.match(/#reviews/)) {
+                $('.menu-tabs a:last').click();
+            }
         });
     </script>
 <% end %>
@@ -17,7 +20,7 @@
             <div class="l-column-main">
                 <h1>Наша команда</h1>
                 <%= @team_header %>
-                <div class="b-tabs">
+                <div class="b-tabs" id="reviews">
                     <div class="wrapper-menu">
                         <ul class="menu-tabs">
                             <li class="item item-selected">

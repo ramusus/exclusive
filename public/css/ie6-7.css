@@ -1,0 +1,25 @@
+.b-social-network .like {
+	margin-right: 7px;
+	}
+.l-header,
+.g-clearfix,
+.l-wrapper-column {
+	zoom: 1;
+	display: block;
+	}
+*+HTML .l-wrapper,
+.l-wrapper-column {
+	display: inline-block;
+	}
+	
+*HTML .b-decorative-bg {
+	display: inline;
+	}
+*HTML .b-logo {
+	clear: left;
+	}
+*HTML .b-social-network {
+	position: absolute;
+	margin-left: 300px;
+	top: 10px;
+	}

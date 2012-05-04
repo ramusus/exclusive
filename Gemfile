@@ -24,3 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'mysql'
+end

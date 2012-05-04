@@ -13,9 +13,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: exclusive
-  pool: 5
-  username: exclusive
-  password: exete4_ws_sdkic
+  adapter: mysql
+  database: exclusivetver_development
+  username: exclusivetver
+  password: 478w23rdefbvt53w
