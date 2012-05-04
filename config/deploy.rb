@@ -1,16 +1,16 @@
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require 'rvm/capistrano'
 require 'bundler/capistrano'
-require 'capistrano/deepmodules'
+#require 'capistrano/deepmodules'
 
 set :application, "exclusive"
 set :deploy_to, "/data/www/exclusive-tver.ru"
 set :deploy_via, :remote_cache
 set :use_sudo, true
-set :user, "ram"
+set :user, "www"
 
 set :rvm_ruby_string, '1.9.2@exclusive'
-set :rvm_type, :system
+set :rvm_type, :user
 
 set :scm, "git"
 set :repository,  "git@ram.unfuddle.com:ram/exclusive.git"
