@@ -9,7 +9,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, true
 set :user, "www"
 
-set :rvm_ruby_string, "1.9.2@#{application}"
+set :rvm_ruby_string, "1.9.2"
 set :rvm_type, :user
 
 set :scm, "git"
@@ -33,5 +33,8 @@ namespace :deploy do
    end
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "cd #{deploy_to}/current && ./server restart"
+  end
+  task :auto_migrate do
+    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:auto:migrate"
   end
 end
