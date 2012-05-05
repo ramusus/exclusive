@@ -1,5 +1,5 @@
 #!/bin/bash
-PORT=3004
+PORT=3006
 
 usage() {
     echo "$0 {start|stop|restart}"

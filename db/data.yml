@@ -1,0 +1,419 @@
+
+---
+people:
+  columns:
+  - id
+  - name
+  - occupation
+  - description
+  - created_at
+  - updated_at
+  - avatar_file_name
+  - avatar_content_type
+  - avatar_file_size
+  - avatar_updated_at
+  records: 
+  - - '1'
+    - Тарас Дьяченко
+    - директор
+    - ! "<ul>\r\n\t<li>человек скромный</li>\r\n</ul>\r\n"
+    - '2012-04-29 18:36:02.355404'
+    - '2012-04-29 20:46:11.016907'
+    - 1.jpg
+    - image/jpeg
+    - '3345'
+    - '2012-04-29 18:36:01.472065'
+  - - '2'
+    - Наталья Дьяченко
+    - старший бухгалтер
+    - ! "<ul>\r\n\t<li>кандидат разных наук</li><li>победитель чемпионта Твери по
+      спортивной ходьбе</li><li>бухгалтерский опыт с 2005 года</li>\r\n</ul>\r\n"
+    - '2012-04-29 18:36:37.126543'
+    - '2012-04-29 20:46:35.580365'
+    - 2.jpg
+    - image/jpeg
+    - '3153'
+    - '2012-04-29 18:36:36.948791'
+  - - '3'
+    - Елена Никитина
+    - старший юрист
+    - ! "<ul>\r\n\t<li>бухгалтерский опыт с 1805 года</li>\r\n</ul>\r\n"
+    - '2012-04-29 18:37:08.877453'
+    - '2012-04-29 20:46:58.767106'
+    - 3.jpg
+    - image/jpeg
+    - '3097'
+    - '2012-04-29 18:37:08.708793'
+  - - '4'
+    - Анна Безруких
+    - специалист по кадрам
+    - ! "<ul>\r\n\t<li>бухгалтерский опыт с 1905 года</li>\r\n</ul>\r\n"
+    - '2012-04-29 18:37:37.132074'
+    - '2012-04-29 20:47:14.981111'
+    - 4.jpg
+    - image/jpeg
+    - '3062'
+    - '2012-04-29 18:37:37.041849'
+  - - '5'
+    - Антонина Пилатова
+    - копирайтер
+    - ''
+    - '2012-04-29 18:37:51.409421'
+    - '2012-04-29 18:37:51.409421'
+    - 5.jpg
+    - image/jpeg
+    - '3134'
+    - '2012-04-29 18:37:51.241506'
+
+---
+ckeditor_assets:
+  columns:
+  - id
+  - data_file_name
+  - data_content_type
+  - data_file_size
+  - assetable_id
+  - assetable_type
+  - type
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - map.jpg
+    - image/jpeg
+    - '6249'
+    - '1'
+    - User
+    - Ckeditor::Picture
+    - '2012-04-29 18:40:54.3792'
+    - '2012-04-29 18:40:54.3792'
+  - - '2'
+    - address-book.jpg
+    - image/jpeg
+    - '9232'
+    - '1'
+    - User
+    - Ckeditor::Picture
+    - '2012-04-29 18:41:13.043772'
+    - '2012-04-29 18:41:13.043772'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - ramusus@gmail.com
+    - $2a$10$7SkoHSgHGUsFvKo5wBczReympa6CI2Kvdd/VxhWegtamr9fV7Y3bu
+    - !!null 
+    - !!null 
+    - '2012-04-30 09:47:49.863207'
+    - '2'
+    - '2012-04-30 09:47:50.118403'
+    - '2012-04-29 18:21:21.702084'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2012-04-29 18:21:21.629746'
+    - '2012-04-30 09:47:50.119595'
+
+---
+chunks:
+  columns:
+  - id
+  - title
+  - code
+  - content
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Контакты в правой колонке
+    - right_contacts
+    - ! "<ul class=\"list-phone\">\r\n\t<li class=\"item\">Секретарь:<br />\r\n\t<strong>(4822)
+      75-00-75</strong></li><li class=\"item\">Директор:<br />\r\n\t<strong>(4822)
+      74-11-29</strong></li>\r\n</ul>\r\n<div class=\"map\">\r\n\t<span class=\"text\">Наш
+      офис:</span> <a class=\"link modal\" href=\"#YMapsID\" onclick=\"showMap();return
+      false;\" rel=\"map\"><img alt=\"метоположение на карте\" class=\"image\" src=\"/system/pictures/1/content_map.jpg?1335724852\"
+      /></a> <span class=\"address\">ул. Карпинского, 18 Тверь</span></div>\r\n<div
+      class=\"email\">\r\n\t<a class=\"link\" href=\"mailto:dyachenko.n@exclusive-tver.ru\">Email
+      для связи</a><br />\r\n\tdyachenko.n@exclusive-tver.ru</div>\r\n<div class=\"add-address-book\">\r\n\t<a
+      class=\"link\" href=\"/\"><img alt=\"записная книжка\" class=\"image\" src=\"/system/pictures/2/content_address-book.jpg?1335724872\"
+      /></a> <span class=\"text\">Добавить в свою<br />\r\n\tзаписную книжку</span></div>\r\n"
+    - '2012-04-29 18:41:48.939484'
+    - '2012-04-29 18:41:48.939484'
+  - - '2'
+    - Социальные кнопки
+    - social_buttons
+    - ! "\t\t\t\t<div class=\"facebook\"><iframe src=\"//www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21\"
+      scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:130px;
+      height:21px;\" allowtransparency=\"true\"></iframe></div>\t\t\t\t<div class=\"vk\"><div
+      id=\"vk_like\" style=\"height: 20px; width: 100px; position: relative; clear:
+      both; background-image: none; background-attachment: initial; background-origin:
+      initial; background-clip: initial; background-color: initial; background-position:
+      initial initial; background-repeat: initial initial; \"><iframe name=\"fXDff633\"
+      frameborder=\"0\" src=\"http://vk.com/widget_like.php?app=2908593&amp;width=100%&amp;page=0&amp;url=http%3A%2F%2Fnew-univer.tversu.ru%2Four_team.html&amp;type=mini&amp;verb=0&amp;title=Exclusive&amp;description=&amp;image=&amp;text=&amp;h=20&amp;height=20&amp;136ff693c8a\"
+      width=\"100%\" height=\"20px\" scrolling=\"no\" id=\"vkwidget1\" style=\"height:
+      20px; width: 100px; overflow-x: hidden; overflow-y: hidden; z-index: 150; \"></iframe></div></div>\t\t\t\t<div
+      class=\"google\"><div id=\"___plusone_0\" style=\"height: 20px; width: 90px;
+      display: inline-block; text-indent: 0px; margin-top: 0px; margin-right: 0px;
+      margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px;
+      padding-bottom: 0px; padding-left: 0px; background-image: initial; background-attachment:
+      initial; background-origin: initial; background-clip: initial; background-color:
+      transparent; border-top-style: none; border-right-style: none; border-bottom-style:
+      none; border-left-style: none; float: none; line-height: normal; font-size:
+      1px; vertical-align: baseline; background-position: initial initial; background-repeat:
+      initial initial; \"><iframe allowtransparency=\"true\" frameborder=\"0\" hspace=\"0\"
+      marginheight=\"0\" marginwidth=\"0\" scrolling=\"no\" style=\"width: 90px; margin-top:
+      0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style:
+      none; border-right-style: none; border-bottom-style: none; border-left-style:
+      none; height: 20px; position: static; left: 0px; top: 0px; visibility: visible;
+      \" tabindex=\"0\" vspace=\"0\" width=\"100%\" id=\"I1_1335724948189\" name=\"I1_1335724948189\"
+      src=\"https://plusone.google.com/_/+1/fastbutton?url=http%3A%2F%2Fnew-univer.tversu.ru%2Four_team.html&amp;size=medium&amp;count=true&amp;hl=ru&amp;jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3DJIpToVHFWFA.en.%2Fsv%3D1%2Fam%3D!OUkz_Oqk3wyIgzT76w%2Fd%3D1%2Frs%3DAItRSTO0HlO3Shv5hQAHzZC4s-zi0bXAiQ#id=I1_1335724948189&amp;parent=http%3A%2F%2Fnew-univer.tversu.ru&amp;rpctoken=273812543&amp;_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart\"
+      title=\"+1\"></iframe></div></div>\t\t\t"
+    - '2012-04-29 18:47:26.598681'
+    - '2012-04-29 18:47:26.598681'
+  - - '3'
+    - Телефон вверху
+    - header_phone
+    - ! "<div class=\"black-text\">\r\n\t(4822) 75-00-75</div>\r\n"
+    - '2012-04-29 18:49:06.508947'
+    - '2012-04-29 18:49:06.508947'
+  - - '4'
+    - Тезисы на главной
+    - index_promo
+    - ! "<ul class=\"b-decorative-list\">\r\n\t<li class=\"item\">Регистрируем и сопровождаем
+      бизнес.</li><li class=\"item\">Приводим документацию в порядок.</li><li class=\"item\">Сдаем
+      отчетности, проводим проверки.</li><li class=\"item\">Знаем как оптимизировать
+      расходы.</li><li class=\"item\">Умеем работать удаленно и оперативно.</li><li
+      class=\"item\">Можем делать все в комплексе.</li><li class=\"item\">Мечта любого
+      руководителя, <span class=\"black\">серьезно</span>.</li>\r\n</ul>\r\n"
+    - '2012-04-29 18:54:07.62804'
+    - '2012-04-29 18:54:07.62804'
+  - - '5'
+    - Наша команда. Текст внизу
+    - team_footer
+    - ! "                \r\n                \r\n                <p class=\"b-big-text\">\r\n
+      \                   Мы понимаем, что аутсорсинговые услуги на ранке Твери являются
+      достаточно молодым направлением бизнеса. Зачастую широкому кругу потребителей
+      непросто разобраться в специфике предоставления услуг по ведению бухгалтерского,
+      кадрового учета и права, поэтому нами разработано специальное предложение для
+      наших клиентов.\r\n                </p>\r\n                <ul class=\"b-big-list\">\r\n
+      \                   <li class=\"item\">\r\n                        Клиенты всегда
+      могут лично обращаться к специалистам нашей компании.\r\n                    </li>\r\n
+      \                   <li class=\"item\">\r\n                        Мы готовы
+      бесплатно помочь выбрать наиболее подходящую систему налогообложения, а также
+      спланировать бухгалтерский, налоговый и кадровый учет еще до того, как Вы станете
+      нашим клиентом.\r\n                    </li>\r\n                </ul>\r\n"
+    - '2012-04-29 20:11:16.96521'
+    - '2012-04-29 20:11:16.96521'
+  - - '6'
+    - Наша команда. Текст вверху
+    - team_header
+    - ! "                <p class=\"b-big-text\">\r\n                    Осознавая
+      всю трудность и изменчивость Российского Законодательства, особенно, в областях
+      бухгалтерского и кадрового учета, а также юридического права, мы стараемся представить
+      для своих клиентов доступные и, одновременно, эффективные решения.\r\n                </p>\r\n
+      \               <p class=\"b-big-text\">\r\n                    Мы располагаем
+      в своем штате специалистами в области бухгалтерских и юридических слуг, которые
+      постоянно повышают свою квалификацию, а также имеют достаточный опыт для достижения
+      наилучшего результата в интересах клиента.\r\n                </p>\r\n"
+    - '2012-04-29 20:11:55.897475'
+    - '2012-04-29 20:11:55.897475'
+
+---
+pages:
+  columns:
+  - id
+  - title
+  - content
+  - slug
+  - created_at
+  - updated_at
+  - person_id
+  - important
+  - menu
+  records: 
+  - - '1'
+    - Бухгалтерское сопровождение
+    - ! "<p class=\"b-big-size\">В область нашей компетенции входят:</p>\r\n<ul class=\"b-big-list\">\r\n\t<li
+      class=\"item\">Бухгалтерский учет в организациях численностью от 3 до 300 человек,
+      заполнение бухгалтерских и налоговых регистров.</li><li class=\"item\">Подготовка
+      и сдача налоговой отчетности, в том числе и по электронным каналам связи.</li><li
+      class=\"item\">Бухгалтерский учет по разным системам налогообложения (ЕНВД,
+      УСНО, ОСНО, ЕСХН).</li><li class=\"item\">Консультации по выбору системы налогообложения
+      и принципам ведения бухгалтерской отчетности.</li><li class=\"item\">Оформление
+      документов на возврат налоговых вычетов (НДФЛ) для льготных категорий граждан.</li>\r\n</ul>\r\n<ul
+      class=\"b-list-with-arrow\">\r\n\t<li class=\"item\">\r\n\t<h3>\r\n\t\t<a href=\"/\">Бухгалтерский
+      аутсорсинг</a></h3>\r\n\t<p>Большинство видов бухгалтерских услуг могут оказываться
+      нами по принципу аутсорсинга, не требуя нахождения бухгалтера в штате компании
+      или выделения отдельного рабочего места. Это значительно сокращает расходы на
+      ведение бухгалтерского учета, особенно для небольших компаний.</p></li><li class=\"item\">\r\n\t<h3>\r\n\t\t<a
+      href=\"/\">Выбор схемы налогообложения</a></h3>\r\n\t<p>Бухгалтерский учет необходим
+      при разных режимах налогообложения. Мы поможем выбрать оптимальный режим для
+      минимизации налоговых и бухгалтерских издержек, исходя из достоинств и недостатков
+      различных схем, а также собственного опыта.</p></li>\r\n</ul>\r\n<div class=\"h-lr-84-50\">\r\n\t<div
+      class=\"b-small-text\">\r\n\t\tСмотрите также:</div>\r\n\t<ul class=\"b-list-without-decorations\">\r\n\t\t<li
+      class=\"item\"><a href=\"/\">100 эффективных способов махинаций для участника
+      совета директоров транснациональной корпорации</a></li><li class=\"item\"><a
+      href=\"/\">Справочник тюремного жаргона для начинающих бухгалтеров-самоучек</a></li>\r\n\t</ul>\r\n</div>\r\n<h2>\r\n\tОриентировочная
+      стоимость бухгалтерского учета</h2>\r\n<table class=\"b-table b-services\">\r\n\t<caption>\r\n\t\tСтоимость
+      услуг</caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th class=\"width-80\">\r\n\t\t\t\tНаименование
+      услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость, руб.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      class=\"width-80\">\r\n\t\t\t\tРегистрация организация по организационно-правовым
+      формам</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот 6 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      class=\"width-80\">\r\n\t\t\t\tРегистрация индивидуальных предпринимателей</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 2 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      class=\"width-80\">\r\n\t\t\t\t<p class=\"b-text\">Внесение изменений в сведения,
+      не содержащиеся в учредительных документах юридического лица:</p>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li>Изменение
+      сведений об участниках.</li><li>Изменение данных о директоре.</li><li>Смена
+      директора.</li><li>Добавление или удаление видов деятельности.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 2 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      class=\"width-80\">\r\n\t\t\t\t<p class=\"b-text\">Внесение изменений в учредительные
+      документы юридического лица:</p>\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li>Сведения о
+      наименовании.</li><li>Фирменном наименовании &mdash; в отношении коммерческих
+      организаций.</li><li>Сведения об адресе (месте нахождения)сведения об уставном
+      капитале (складочном капитале, уставном фонде, паевом фонде).</li><li>Сведения
+      об участнике.</li><li>Сведения о филиалах, представительствах сведения о видах
+      экономической деятельности.</li><li>Иные положения учредительных документов.</li><li>Целях
+      приведения устава общества с ограниченной ответственностью в соответствие с
+      положениями Федерального закона от 30.12.2008 № 312-ФЗ.</li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tОт 4 000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table
+      class=\"b-table b-services\">\r\n\t<caption>\r\n\t\tСтоимость работ бухгалтерского
+      обслуживания</caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th class=\"width-80\">\r\n\t\t\t\tСистема
+      налогообложения</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость в
+      месяц, руб.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"width-80\">\r\n\t\t\t\t<p
+      class=\"b-text\">Общая</p>\r\n\t\t\t\t<ul class=\"b-mini-list\">\r\n\t\t\t\t\t<li
+      class=\"item\">Количество человек в штате: до 10.</li><li class=\"item\">Количество
+      первички: до 50.</li><li class=\"item\">Количество ОС: до 10.</li><li class=\"item\">Касса:
+      отдельно.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t11
+      500</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t<p class=\"b-text\">Упрощенная
+      6%</p>\r\n\t\t\t\t<ul class=\"b-mini-list\">\r\n\t\t\t\t\t<li class=\"item\">Количество
+      человек в штате: до 10.</li><li class=\"item\">Количество первички: до 50.</li><li
+      class=\"item\">Количество ОС: не учитывается.</li><li class=\"item\">Касса:
+      отдельно.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t5
+      000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t<p class=\"b-text\">Упрощенная
+      15%</p>\r\n\t\t\t\t<ul class=\"b-mini-list\">\r\n\t\t\t\t\t<li class=\"item\">Количество
+      человек в штате: до 10.</li><li class=\"item\">Количество первички: до 50.</li><li
+      class=\"item\">Количество ОС: до 10.</li><li class=\"item\">Касса: отдельно.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\t7 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t<p
+      class=\"b-text\">Упрощенная ИП</p>\r\n\t\t\t\t<ul class=\"b-mini-list\">\r\n\t\t\t\t\t<li
+      class=\"item\">Количество человек в штате: отдельно.</li><li class=\"item\">Количество
+      первички: до 50.</li><li class=\"item\">Количество ОС: не учитывается.</li><li
+      class=\"item\">Касса: отдельно.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\t3 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t&laquo;Нулевка&raquo;
+      ОРН</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t3 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t&laquo;Нулевка&raquo;
+      УСН</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t2 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\t&laquo;Нулевка&raquo;
+      ИП</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t1 000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table
+      class=\"b-table b-services\">\r\n\t<caption>\r\n\t\tДополнительно</caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th
+      class=\"width-80\">\r\n\t\t\t\tНаименование услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость
+      в месяц, руб.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tВедение
+      кассы (за 1 кассовый аппарат)</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот
+      1 500 <span class=\"b-mini-text\">(в зависимости от кол-ва операций)</span></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table
+      class=\"b-table b-services b-services-bottom-none\">\r\n\t<caption>\r\n\t\tБухгалтерские
+      услуги, разовые работы <span class=\"b-mini-text\">(Составление деклараций:
+      300 рублей &ndash; одна декларация)</span></caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th
+      colspan=\"2\">\r\n\t\t\t\t<em>Стоимость работ: &laquo;Расчет заработной платы&raquo;</em></th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th
+      class=\"width-80\">\r\n\t\t\t\tНаименование услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость
+      в месяц, руб.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tРасчет
+      заработной платы до 10 человек *</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот
+      3 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tРасчет заработной
+      платы до 20 человек *</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот 5
+      650</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tРасчет заработной
+      платы до 50 человек *</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот 13
+      900</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p class=\"b-mini-text\">*
+      (расчетно-платежная ведомость, платежная ведомость или расходные ордера (на
+      выбор), формирование налогооблагаемой базы, платежные поручения по ЕСН и взносам.)</p>\r\n<table
+      class=\"b-table b-services\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"2\">\r\n\t\t\t\t<em>Стоимость
+      работ: &laquo;Формирование бухгалтерской и налоговой отчетности&raquo; С учетом
+      предоставления в контролирующие органы курьером</em></th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th
+      class=\"width-80\">\r\n\t\t\t\tНаименование услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость
+      за отч. пер.(рубли) НДС в т. ч.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование
+      отчетности по Общему Налогообложения (ОРН)</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот
+      5 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование отчетности
+      по Упрощенной Системе Налогообложения (УСН)</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tот
+      3 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование нулевой
+      отчетности по Общему Режиму Налогообложения (ОРН)</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t3
+      000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование нулевой
+      отчетности по Упрощенной Системе Налогообложения (УСН)</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t2
+      000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование нулевой
+      отчетности по Упрощенной Системе Налогообложения ИП (УСН)</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\t1 000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table
+      class=\"b-table b-services\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"2\">\r\n\t\t\t\t<em>Стоимость
+      работ: &laquo;Сдача бухгалтерской и налоговой отчетности&raquo;</em></th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th
+      class=\"width-80\">\r\n\t\t\t\tНаименование услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость
+      за 1 сдачу (рубли) НДС в т. ч.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tСдача
+      отчетности через почту</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\tУслуги
+      ФГУП &laquo;Почта России&raquo;</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tСдача
+      отчетности через электронную почту</td>\r\n\t\t\t<td class=\"width-20\">\r\n\t\t\t\t1
+      500</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table class=\"b-table b-services\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th
+      colspan=\"2\">\r\n\t\t\t\t<em>Стоимость работ: &laquo;Восстановление бухгалтерского
+      учета&raquo;</em></th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th class=\"width-80\">\r\n\t\t\t\tНаименование
+      услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость за отч. пер.
+      (рубли) НДС в т. ч.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tВосстановление
+      бухгалтерского учета по Общему Режиму Налогообложения (ОРН)</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 10 000</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tВосстановление
+      бухгалтерского учета по Упрощенной Системе Налогообложения (УСН)</td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 5 000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<table
+      class=\"b-table b-services\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"2\">\r\n\t\t\t\t<em>Стоимость
+      работ: &laquo;Формирование кассовой дисциплины&raquo;</em></th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th
+      class=\"width-80\">\r\n\t\t\t\tНаименование услуги</th>\r\n\t\t\t<th class=\"width-20\">\r\n\t\t\t\tСтоимость
+      в месяц (рубли) НДС в т. ч.</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование
+      до 5 кассовых аппаратов <span class=\"b-mini-text\">(За 1 аппарат)</span></td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 1 500</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t\tФормирование
+      более 5 кассовых аппаратов <span class=\"b-mini-text\">(За 1 аппарат)</span></td>\r\n\t\t\t<td
+      class=\"width-20\">\r\n\t\t\t\tот 1 200</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    - accounting_support
+    - '2012-04-29 18:55:25.040194'
+    - '2012-04-29 19:16:58.468302'
+    - '2'
+    - ! "<ul class=\"b-separated-list\">\r\n\t<li class=\"item\">Первый месяц бухгалтерского
+      сопровождения, при регистрации ООО или ИП в нашей компании бесплатно.</li><li
+      class=\"item\">Консультация по выбору&nbsp; налогообложения и ведению&nbsp;
+      бухгалтерского учета &ndash; бесплатно.</li><li class=\"item\">Красивый городской
+      номер для Вашего бизнеса в рассрочку до 6 месяцев.</li><li class=\"item item-last\">Подготовка
+      и сдача &laquo;нулевки&raquo; &nbsp;&ndash; 1050 рублей.</li>\r\n</ul>\r\n"
+    - true
+  - - '2'
+    - Кадровый  учет и аутстаффинг
+    - <p>Инфо</p>
+    - hr
+    - '2012-04-29 20:04:05.417547'
+    - '2012-04-29 20:04:05.417547'
+    - '4'
+    - <p>Важное инфо</p>
+    - true
+
+---
+reviews:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  - person_id
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  records: 
+  - - '1'
+    - Благодарственное письмо
+    - '2012-04-29 20:31:32.976842'
+    - '2012-04-29 20:43:44.695779'
+    - '1'
+    - gallery-1.jpg
+    - image/jpeg
+    - '71434'
+    - '2012-04-29 20:43:42.318401'

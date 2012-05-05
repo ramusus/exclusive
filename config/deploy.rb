@@ -9,11 +9,11 @@ set :deploy_via, :remote_cache
 set :use_sudo, true
 set :user, "www"
 
-set :rvm_ruby_string, '1.9.2@exclusive'
+set :rvm_ruby_string, "1.9.2@#{application}"
 set :rvm_type, :user
 
 set :scm, "git"
-set :repository,  "git@ram.unfuddle.com:ram/exclusive.git"
+set :repository,  "git@ram.unfuddle.com:ram/#{application}.git"
 set :branch, "master"
 
 role :web, "lectures.dev.infolio.ru"                          # Your HTTP server, Apache/etc
@@ -24,15 +24,14 @@ default_run_options[:pty] = true
 
 after "bundle:install", "deploy:migrate"
 
-# If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
   task :start do
-    run "#{try_sudo} sudo /etc/init.d/nginx start"
+    run "cd #{deploy_to}/current && ./server start"
   end
   task :stop do
-    run "#{try_sudo} sudo /etc/init.d/nginx stop"
+    run "cd #{deploy_to}/current && ./server stop"
    end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} sudo /etc/init.d/nginx restart"
+    run "cd #{deploy_to}/current && ./server restart"
   end
 end
