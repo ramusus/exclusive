@@ -16,7 +16,7 @@ group :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'mysql'
+  gem 'mysql2'
 end
 
 gem 'capistrano'
