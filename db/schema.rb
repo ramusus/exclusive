@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120429221622) do
+ActiveRecord::Schema.define(:version => 20120509183100) do
 
   create_table "chunks", :force => true do |t|
     t.string   "title"
@@ -37,12 +37,12 @@ ActiveRecord::Schema.define(:version => 20120429221622) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
+    t.string   "seo_title", :default => ''
     t.text     "content"
     t.string   "slug"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "person_id"
-    t.text     "important"
     t.boolean  "menu"
   end
 

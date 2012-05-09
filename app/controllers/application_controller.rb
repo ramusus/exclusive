@@ -4,10 +4,12 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale, :set_context
 
   def set_context
-    ['header_phone','social_buttons','index_promo','right_contacts','team_header','team_footer'].each do |var_name|
+    ['header_phone','social_buttons','index_promo','index_title','right_contacts','right_important','team_header','team_footer'].each do |var_name|
       chunk = Chunk.find_by_code(var_name)
       if chunk
         chunk = chunk.content.html_safe
+      else
+        chunk = ''
       end
       self.instance_variable_set('@' + var_name, chunk)
     end

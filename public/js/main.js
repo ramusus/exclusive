@@ -1,8 +1,24 @@
 $(function(){
+	
+	
+	
+	
+	var anc = window.location.hash.replace("#","");
+	var indexItem = 0;
+	anc = '#'+anc;
+	if(anc != ""){
+		var _tabs = $('.b-tabs .menu-tabs .item');
+		_tabs.each(function(){
+			if($(this).find('.link').attr('href') == anc){
+				_tabs.removeClass('item-selected');
+				indexItem = $(this).addClass('item-selected').index();
+				return;
+			}	
+		});
+		$('.b-tabs .content-tabs .tab').removeClass('tab-selected').eq(indexItem).addClass('tab-selected').show();
+	}
+	
 	tabs();
-	
-	
-	
 	
 	
 /*Function*/	
@@ -26,7 +42,6 @@ $(function(){
 				tabs.find('.tab').fadeOut(200);
 				tabs.find('.tab-selected').fadeIn(200);
 			}
-			return false;
 		});
 	}
 });

@@ -7,9 +7,6 @@
                 $('ul', this).not('.b-list-mini-image').addClass('b-list-marker-point');
                 $('li', this).addClass('item');
             });
-            if(document.location.href.match(/#reviews/)) {
-                $('.menu-tabs a:last').click();
-            }
         });
     </script>
 <% end %>
@@ -18,21 +15,21 @@
     <div class="l-content">
         <div class="l-wrapper-column">
             <div class="l-column-main">
-                <h1>Наша команда</h1>
+                <h1>Наша комманда</h1>
                 <%= @team_header %>
                 <div class="b-tabs" id="reviews">
                     <div class="wrapper-menu">
                         <ul class="menu-tabs">
                             <li class="item item-selected">
-                                <a href="/" class="link">Сотрудники</a>
+                                <a href="#personnel" class="link">Сотрудники</a>
                             </li>
                             <li class="item">
-                                <a href="/" class="link">Отзывы</a>
+                                <a href="#reviews" class="link">Отзывы</a>
                             </li>
                         </ul>
                     </div>
                     <ul class="content-tabs">
-                        <li class="tab tab-selected">
+                        <li class="tab">
                             <ul class="b-list-with-image">
                                 <% @persons.each do |person| %>
                                     <li class="item">
@@ -42,7 +39,7 @@
                                         <ul class="b-list-mini-image">
                                             <% person.reviews.each do |review| %>
                                                 <li class="item">
-                                                    <%= link_to(image_tag(review.image.url(:thumb), :class => 'image', :alt => review.name), review.image.url, :class => 'link modal', :rel => 'gallery-1') %>
+                                                    <%= link_to(image_tag(review.image.url(:thumb), :class => 'image', :alt => review.name), review.image.url, :class => 'link modal', :rel => "gallery-#{person.id}") %>
                                                 </li>
                                             <% end %>
                                         </ul>
@@ -51,13 +48,11 @@
                             </ul>
                         </li>
                         <li class="tab">
-                            <% @reviews.each_slice(6) do |slice| %>
-                                <ul class="b-list-big-image">
-                                    <% slice.each do |review| -%>
-                                        <%= link_to(image_tag(review.image.url(:big_thumb), :alt => review.name), review.image.url, :class => 'link modal', :rel => 'gallery-2') %>
-                                    <% end -%>
-                                </ul>
-                            <% end %>
+                            <ul class="b-list-big-image">
+                                <% @reviews.each do |review| -%>
+                                    <li class="item"><%= link_to(image_tag(review.image.url(:big_thumb), :alt => review.name), review.image.url, :class => 'link modal', :rel => 'gallery-2') %></li>
+                                <% end -%>
+                            </ul>
                         </li>
                     </ul>
                 </div>

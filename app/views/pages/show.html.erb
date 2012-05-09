@@ -1,4 +1,4 @@
-<% content_for :title do %><%= @page.title.html_safe %><% end %>
+<% content_for :title do %><%= @page.seo_title.html_safe or @page.title.html_safe %><% end %>
 
 <% content_for :content do %>
     <div class="l-content l-content-wide">
@@ -43,11 +43,11 @@
                             </li>
                         </ul>
                     </div>
-                    <% if @page.important.strip.length > 0 %>
+                    <% if @right_important.strip.length > 0 %>
                         <div class="b-red-text">
                             <strong>Это важно:</strong>
                         </div>
-                        <%= @page.important.html_safe %>
+                        <%= @right_important %>
                     <% end %>
                 </div>
             </div>

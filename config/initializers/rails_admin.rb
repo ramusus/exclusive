@@ -87,8 +87,8 @@ RailsAdmin.config do |config|
       include_fields :title, :slug, :person
     end
     edit do
-      include_fields :title, :slug, :person, :menu
-      include_fields :content, :important do
+      include_fields :title, :seo_title, :slug, :person, :menu
+      include_fields :content do
         ckeditor true
         ckeditor_config_js '/javascripts/ckeditor/config.js'
       end
@@ -100,7 +100,7 @@ RailsAdmin.config do |config|
       include_fields :title, :code
     end
     edit do
-      include_fields :title, :code
+      include_fields :title, :code, :content
       include_fields :content do
         ckeditor true
         ckeditor_config_js '/javascripts/ckeditor/config.js'

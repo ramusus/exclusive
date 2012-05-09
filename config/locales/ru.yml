@@ -11,9 +11,9 @@ ru:
     attributes:
       page:
         title: "Заголовок"
+        seo_title: "заголовок SEO"
         slug: "Адрес"
         content: "Основной блок"
-        important: "Самое важное"
         menu: "Показывать в меню"
         person: "Сотрудник"
       chunk:

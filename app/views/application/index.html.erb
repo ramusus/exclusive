@@ -1,4 +1,4 @@
-<% content_for :title do %>Эксклюзив<% end %>
+<% content_for :title do %><%= strip_tags(@index_title) or 'Эксклюзив' %><% end %>
 
 <% content_for :body_attrs do %> class="l-index-page"<% end %>
 
@@ -30,7 +30,7 @@
                 <ul class="b-horizontal-list">
                     <li class="item"><a href="/about/">О команде</a></li>
                     <li class="item"><a href="/team/#reviews">Отзывы</a></li>
-                    <li class="item"><a href="/contacts/">Контакты</a></li>
+                    <li class="item"><a href="/team/">Контакты</a></li>
                 </ul>
             </div>
         </div>

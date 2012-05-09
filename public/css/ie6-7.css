@@ -23,3 +23,7 @@
 	margin-left: 300px;
 	top: 10px;
 	}
+.b-list-big-image .item  {
+	zoom: 1;
+	display: inline;
+	}

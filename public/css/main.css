@@ -656,11 +656,20 @@ SUB {
 	margin: 0 -45px 22px -55px;
 	}
 	.b-list-big-image .item {
-		background: none;
+		background: none repeat scroll 0 0 transparent;
+		display: inline-block;
+		margin: 0 15px 26px;
+		overflow: visible;
 		padding: 0;
-		float: left;
-		margin: 0 15px;
+		position: relative;
+		vertical-align: top;
 		}
+.b-tabs .tab {
+	display: none;
+	}
+.b-tabs .tab-selected {
+	display: block;
+	}
 .b-all-contects {
 	}
 	.b-all-contects .title {
