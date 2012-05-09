@@ -1,11 +1,11 @@
-<% content_for :title do %><%= @page.seo_title.html_safe or @page.title.html_safe %><% end %>
+<% content_for :title do %><%= @page.title_seo.html_safe or @page.title.html_safe %><% end %>
 
 <% content_for :content do %>
     <div class="l-content l-content-wide">
         <div class="b-blue-bg">
             <div class="l-wrapper-column">
                 <div class="l-column-main">
-                    <h1><%= @page.title.html_safe %></h1>
+                    <h1><%= @page.title_h1.html_safe %></h1>
                     <%= @page.content.html_safe %>
                 </div>
                 <div class="l-column-right">

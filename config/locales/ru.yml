@@ -8,10 +8,12 @@ ru:
       person: "Сотрудник"
       chunk: "Блок"
       review: "Отзыв"
+      user: "Пользователь"
     attributes:
       page:
         title: "Заголовок"
-        seo_title: "заголовок SEO"
+        title_seo: "Заголовок SEO"
+        title_h1: "Заголовок на странице"
         slug: "Адрес"
         content: "Основной блок"
         menu: "Показывать в меню"
@@ -28,3 +30,15 @@ ru:
       review:
         image: "Картинка"
         person: "Сотрудник"
+      user:
+        email: "Email"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        reset_password_sent_at: "Сброс пароля"
+        remember_created_at: "Сохранение авторизации"
+        sign_in_count: "Кол-во авторизаций"
+        current_sign_in_at: "Текущая авторизация"
+        last_sign_in_at: "Предыдущая авторизация"
+        current_sign_in_ip: "Текущий IP"
+        last_sign_in_ip: "Предыдущий IP"
+        email_notifications: "Оповещать о новых заявках и вопросах"
