@@ -101,10 +101,10 @@ RailsAdmin.config do |config|
     end
     edit do
       include_fields :title, :code, :content
-      include_fields :content do
-        ckeditor true
-        ckeditor_config_js '/javascripts/ckeditor/config.js'
-      end
+#      include_fields :content do
+#        ckeditor true
+#        ckeditor_config_js '/javascripts/ckeditor/config.js'
+#      end
     end
   end
 
