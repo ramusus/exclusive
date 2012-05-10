@@ -66,12 +66,6 @@ $(function(){
         });
         /*Закрытие модального окна*/
         $(modal.closeModal).click(function(){hideModal(); return false;});
-
-        $('.l-modal, .l-modal .active-image').live('click', function(event){
-            var element = event.target.nodeName;
-            if(element == 'IMG')return false;
-            else hideModal();
-        });
     }
 
     function hideModal(){
