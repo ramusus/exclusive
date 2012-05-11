@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
   end
 
   def team
-    @reviews = Review.all
+    @reviews = Review.where("person_id is NULL")
   end
 
 
