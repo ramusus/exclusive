@@ -1,4 +1,4 @@
-<% content_for :title do %><%= strip_tags(@index_title) or 'Эксклюзив' %><% end %>
+<% content_for :title do %><%= strip_tags(@index_title).html_safe or 'Эксклюзив' %><% end %>
 
 <% content_for :body_attrs do %> class="l-index-page"<% end %>
 
@@ -11,7 +11,7 @@
             <div class="b-triangular-with-gradient">
                 <ul class="b-main-menu b-main-menu-index">
                     <% @menu.each do |menu_item| %>
-                        <li class="item"><%= link_to menu_item.title, "/#{menu_item.slug}/" %>
+                        <li class="item"><%= link_to menu_item.title.html_safe, "/#{menu_item.slug}/" %>
                     <% end %>
                 </ul>
             </div>
