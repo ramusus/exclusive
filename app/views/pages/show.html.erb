@@ -18,7 +18,7 @@
                         <ul class="b-main-menu">
                             <% @menu.each do |menu_item| %>
                                 <% if menu_item != @page %>
-                                    <li class="item"><%= link_to menu_item.title, "/#{menu_item.slug}/" %>
+                                    <li class="item"><%= link_to menu_item.title.html_safe, "/#{menu_item.slug}/" %>
                                 <% end %>
                             <% end %>
                         </ul>
