@@ -2,13 +2,12 @@
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="og:title" content="Компания &quot;Эксклюзив&quot;, Тверь" />
+    <meta name="og:title" content="Компания &quot;Эксклюзив&quot;, Тверь">
     <meta name="og:description" content="Бухгалтерское обеспечение, кадровый учет и юридические услуги для организаций и частных лиц. Команда специалистов. Аутсорсинг.">
     <meta name="og:image" content="<%= "#{request.protocol}#{request.host_with_port}/img/text/social_logo.gif" %>">
-    <meta name="og:type" content="website" />
-    <meta name="og:url" content="http://exclusive-firm.ru" />
-    <meta name="og:image" content="http://exclusive-firm.ru/img/text/logo.png" />
-    <meta name="og:site_name" content="exclusive-firm.ru" />
+    <meta name="og:url" content="<%= "#{request.protocol}#{request.host_with_port}" %>">
+    <meta name="og:site_name" content="<%= "#{request.host_with_port}" %>">
+    <meta name="og:type" content="website">
     <meta name="fb:admins" content="100000593472910" />
     <title><%= yield :title %></title>
     <link media="screen" href="/css/main.css" type="text/css" rel="stylesheet">
