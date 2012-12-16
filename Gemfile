@@ -19,6 +19,7 @@ group :production do
   gem 'mysql2'
 end
 
+gem 'unicorn'
 gem 'capistrano'
 gem 'rvm-capistrano'
 gem 'capistrano-deepmodules'
