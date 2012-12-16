@@ -111,6 +111,6 @@ namespace :deploy do
   end
 
   task :auto_migrate do
-    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:auto:migrate"
+    run "cd #{deploy_to}/current && #{rake} RAILS_ENV=production db:auto:migrate"
   end
 end

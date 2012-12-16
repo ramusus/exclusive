@@ -21,8 +21,6 @@ end
 
 gem 'unicorn'
 gem 'capistrano'
-gem 'rvm-capistrano'
-gem 'capistrano-deepmodules'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
